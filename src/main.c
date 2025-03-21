@@ -2,7 +2,11 @@
 #include <stdlib.h>
 #include <commons/txt.h>
 
-int main(int argc, char* argv[]) {
-    txt_write_in_stdout("Hola, Operativos!!\n");
+int main() {
+    float grados,farenheit;
+    printf("Ingrese los grados en celsius: \n");
+    scanf("%f",&grados);
+    farenheit = grados*1.80 + 32;
+    printf("Los grados farenheit son: %.3f \n",farenheit);
     return 0;
 }
